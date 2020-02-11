@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Punching Bag</title>
+</head>
+<body>
+
+    <h1>Angry? Take it all out on our punching bag</h1>
+    <div id="vue-app">
+        <div v-bind:class="{bag: !burst, bagBurst: burst}"></div>
+        <div class="h">
+            <div class="bag-health" v-bind:style = "{width: health + '%'}"></div>
+        </div>
+        <button v-on:click="punch" v-show="!burst">Punch</button>
+        <button v-on:click="restart">Restart</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+.bag{
+    height: 550px;
+    background: url('assets/bag.png') center no-repeat;
+}
+.h{
+    margin: 20px 300px;
+    border: 1px solid black;
+    height: 20px;
+}
+.bag-health{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+.bagBurst{
+    height: 550px;
+    background: url('assets/bag-burst.png') center no-repeat;
+}
+button{
+    width: 150px;
+    margin: 10px;
+    height: 25px;
+    font-weight: bold;
+}
